@@ -1,4 +1,4 @@
-
+package uk.ac.westminster.products_api;
 
 
 public class Product {
@@ -17,9 +17,9 @@ public class Product {
     }
 
     // Getter for id
-    //public Long getId() {S
-    //  return this.id;
-    //}
+    public Long getId() {
+        return this.id;
+    }
 
     public String getName() {
         return this.name;
@@ -29,4 +29,19 @@ public class Product {
     public double getPrice(){
         return this.price;
     }
+
+    // Setters
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
+
+

@@ -1,3 +1,5 @@
+package uk.ac.westminster.products_api;
+
 public class Customer {
     private Long id;
     private String name;

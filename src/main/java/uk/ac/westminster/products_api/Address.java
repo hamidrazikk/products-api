@@ -1,3 +1,5 @@
+package uk.ac.westminster.products_api;
+
 
 
 public class Address {
@@ -26,3 +28,4 @@ public class Address {
         return postcode;
     }
 }
+
