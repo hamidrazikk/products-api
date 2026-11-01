@@ -35,5 +35,27 @@ public class DigitalProduct extends Product {
     public void setFileSizeMB(double fileSizeMB) {
         this.fileSizeMB = fileSizeMB;
     }
+
+    @Override
+    public String getSummary() {
+        return "Digital: " + getName() + " | Download: " + downloadUrl;
+    }
+
+
+    @Override
+    public void applyDiscount(double rate) {
+    
+
+    }
+    @Override
+    public double getDiscountedPrice() {
+
+    }
+
+
+
+
+
+
 }
     

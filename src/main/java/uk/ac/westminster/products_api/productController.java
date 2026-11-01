@@ -13,17 +13,6 @@ import java.util.List;
 
 public class productController {
     @Autowired
-
-
-
-
-
-
-
-
-
-
-
     public List<Product> getAllProducts(){
         return productService.getAllProducts();
 
@@ -34,4 +23,11 @@ public class productController {
     public Product getById(@PathVariable Long id) {
         return new Product(id, "Laptop", 999.99);
     }
+
+    @GetMapping("/products/summaries")
+    public List<String> getSummaries() {
+        return productService.getAllSummaries();
+    }
+
+
 }

@@ -35,4 +35,22 @@ public class PhysicalProduct extends Product {
     public void setDimensions(String dimensions) {
         this.dimensions = dimensions;
     }
+
+    @Override 
+    public String getSummary(){
+        return "Physical: " + getName() + " | Weight: " + weightKg + " kg";
+    }
+
+    private double discountedPrice;
+    
+    @Override
+    public void applyDiscount(double rate) {
+
+    }
+
+    @Override
+    public double getDiscountedPrice() {
+    
+    }
+    
 }
